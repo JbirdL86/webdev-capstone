@@ -205,6 +205,10 @@ header {
   font-family: 'Cocogoose', serif;
 }
 
+.hidden-speakers {
+  display: none;
+}
+
 .divisor {
   width: 25px;
   border: 1px solid rgb(172, 168, 168);
@@ -523,6 +527,10 @@ header {
 
   .speaker-text {
     margin: 0 10px;
+  }
+
+  .hidden-speakers {
+    display: flex;
   }
 
   .more {

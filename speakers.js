@@ -18,7 +18,9 @@ function createSpeakers() {
 }
 
 function populateSpeakers() {
-  const speakerContainer = document.querySelector('.speakers-container');
+  const featuredSpeakers = document.querySelector('.speakers-section');
+  let speakersBuff = document.createElement('div');
+  speakersBuff.classList.add('speakers-container');
 
   for (let i = 0; i < speakers.length; i += 1) {
     const speakerWrapper = document.createElement('article');
@@ -42,9 +44,25 @@ function populateSpeakers() {
           <p>${speakers[i].description}</p>
         </div>
     `;
-    speakerContainer.appendChild(speakerWrapper);
+
+    speakersBuff.appendChild(speakerWrapper);
+
+    if (i % 2 === 1) {
+      const speakerContainer = speakersBuff;
+      speakerContainer.appendChild(speakerWrapper);
+
+      speakerContainer.classList.add('speakers-container');
+      if (i > 2) {
+        speakerContainer.classList.add('hidden-speakers');
+      }
+      featuredSpeakers.appendChild(speakerContainer);
+      speakersBuff = document.createElement('div');
+      speakersBuff.classList.add('speakers-container');
+    }
   }
 }
 
+createSpeakers();
+createSpeakers();
 createSpeakers();
 populateSpeakers();
