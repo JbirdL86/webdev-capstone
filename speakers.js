@@ -15,6 +15,18 @@ function createSpeakers() {
 
   speaker = new Speaker('Elon Musk', 'Founder, CEO and Chief Engineer of SpaceX', 'Elon Reeve Musk is an entrepreneur and business magnate. He is the founder, CEO, and Chief Engineer at SpaceX; early stage investor, CEO, and Product Architect of Tesla, Inc.', 'assets/elonmusk.png');
   speakers.push(speaker);
+
+  speaker = new Speaker('Mark Zuckerberg', 'Internet entrepreneur, philanthropist, media mogul', 'Mark Elliot Zuckerberg is an American media magnate, internet entrepreneur, and philanthropist. He is known for co-founding Facebook, Inc.', 'assets/markzuk.jpeg');
+  speakers.push(speaker);
+
+  speaker = new Speaker('Steve Jobs', 'Chairman, chief executive officer, and co-founder of Apple Inc.', 'Steven Paul Jobs was an American business magnate, industrial designer, investor, and media proprietor.', 'assets/stevejobs.jpeg');
+  speakers.push(speaker);
+
+  speaker = new Speaker(' Dan Bricklin', 'Founder and president of Software Garden', 'Dan Bricklin was co-creator of VisiCalc, the first spreadsheet software available for personal computers. He also founded Trellix, a website software company now owned by Web.com', 'assets/danbricklin.jpg');
+  speakers.push(speaker);
+
+  speaker = new Speaker('Larry Ellison', 'Executive chairman and chief technology officer of Oracle Corporation.', 'Lawrence Joseph Ellison is an American businessman and investor who is a co-founder, he was listed by Bloomberg Billionaires Index as the ninth-wealthiest person in the United States and as the tenth-wealthiest in the world', 'assets/larryellison.jpg');
+  speakers.push(speaker);
 }
 
 function populateSpeakers() {
@@ -62,7 +74,5 @@ function populateSpeakers() {
   }
 }
 
-createSpeakers();
-createSpeakers();
 createSpeakers();
 populateSpeakers();
